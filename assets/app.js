@@ -9,6 +9,7 @@
 import './styles/app.sass'
 import 'bootstrap/dist/js/bootstrap.min'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap-icons/font/bootstrap-icons.min.css'
 import './scripts/components/header'
 import './scripts/components/footer'
 import 'animate.css'

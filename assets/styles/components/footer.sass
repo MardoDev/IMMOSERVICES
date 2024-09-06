@@ -1,0 +1,162 @@
+@import "../color"
+@import "../font"
+
+body
+  footer
+    width: auto
+    height: auto
+    margin: auto
+    background-color: $color-footer-background
+
+body
+  footer
+    .footer-wrapper
+      width: 90%
+      height: auto
+      margin: auto
+
+footer
+  .footer-wrapper
+    .footer-st-line
+      display: grid
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+      gap: 50px
+      padding-top: 50px
+      padding-bottom: 50px
+
+.footer-wrapper
+  .footer-st-line
+    h1
+      color: white
+      font-size: 20px
+      font-family: $font-helvetica-bold
+
+.footer-wrapper
+  .footer-st-line
+    .about-us
+      p
+        color: rgba(255, 255, 255, 0.2)
+        text-align: justify
+        font-size: 15px
+
+.footer-wrapper
+  .footer-sd-line
+    display: flex
+    justify-content: space-between
+    padding-top: 30px
+    padding-bottom: 30px
+
+.footer-sd-line
+  nav
+    ul
+      width: 100%
+      list-style-type: none
+      margin: 0
+      padding: 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+
+.footer-sd-line
+  nav
+    ul
+      a.df-center
+        color: white
+        margin-right: 15px
+        &:hover
+          color: rgba(255, 255, 255, 0.5)
+
+.footer-wrapper
+  .footer-sd-line
+    .social-links
+      display: flex
+      justify-content: space-between
+      align-content: flex-start
+
+.footer-sd-line
+  .social-links
+    a
+      font-size: 20px
+      margin-right: 20px
+      color: white
+      &:hover
+        color: $primary-color-light
+
+.footer-wrapper
+  .footer-nd-line
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-top: 1.5px solid white
+    height: 100px
+
+.footer-wrapper
+  .footer-nd-line
+    p
+      color: white
+      font-size: 15px
+
+.footer-wrapper
+  .footer-nd-line
+    a
+      color: $primary-color
+      display: flex
+      align-items: center
+      text-decoration: none
+
+.footer-wrapper
+  .footer-nd-line
+    a
+      img
+        height: 50px
+
+.footer-wrapper
+  .footer-nd-line
+    a
+      span
+        font-size: 25px
+        color: white
+
+@media all and (max-width: 830px)
+  .footer-wrapper
+    .footer-sd-line
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      padding-top: 30px
+      padding-bottom: 30px
+
+  .footer-wrapper
+    .footer-sd-line
+      .social-links
+        margin-top: 15px
+
+@media all and (max-width: 600px)
+  .footer-wrapper
+    .footer-nd-line
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+  .footer-sd-line
+    nav
+      ul
+        a.df-center
+          font-size: 13px
+
+
+  .footer-sd-line
+    nav
+      ul
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+
+  .footer-sd-line
+    nav
+      ul
+        a
+          margin-top: 10px
