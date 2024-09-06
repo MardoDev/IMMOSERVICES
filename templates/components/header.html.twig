@@ -1,2 +1,24 @@
 <header>
+    <div class="header-wrapper">
+        <a class="bl-link header-logo" href="{{ path("app_main") }}"><img src="{{ asset('img/logo.png') }}" alt="Logo" /><span>IMMO & SERVICES</span></a>
+        <nav>
+            <ul class="animate__animated">
+                <li><a href="#" class="df-center active">ACCEUIL</a></li>
+                <li><a href="#" class="df-center">A PROPOS DE NOUS</a></li>
+                <li><a href="#" class="df-center">NOS BIENS</a></li>
+                <li><a href="#" class="df-center">CARRIERES</a></li>
+                <li><a href="#" class="df-center">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="df-center">
+            <a class="df-center admin-link" href="#">
+                <img src="{{ asset('img/svg/user-avatar-filled-alt-svgrepo-com.svg') }}" alt="UserIcon" />
+                <span>ESPACE ADMIN</span>
+            </a>
+            <button class="header-menu-btn df-center">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+
+    </div>
 </header>

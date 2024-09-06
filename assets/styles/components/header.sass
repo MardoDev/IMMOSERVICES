@@ -1,0 +1,157 @@
+@import "../font"
+@import "../color"
+
+body
+  main
+    padding-top: 50px
+
+body
+  header
+    width: 100%
+    height: auto
+    margin: auto
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2)
+    position: fixed
+    top: 0
+    left: 0
+    background-color: white
+
+body
+  header
+    .header-wrapper
+      width: 90%
+      height: 50px
+      margin: auto
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+header
+  .header-wrapper
+    .header-logo
+      color: $primary-color
+      display: flex
+      align-items: center
+      text-decoration: none
+
+header
+  .header-wrapper
+    .header-logo
+      img
+        height: 35px
+
+header
+  .header-wrapper
+    .header-logo
+      span
+        font-family: $font-helvetica-bold
+
+header
+  .header-wrapper
+    nav
+      height: 100%
+
+header
+  .header-wrapper
+    .header-menu-btn
+      outline: none
+      border: none
+      background-color: transparent
+      border-radius: 5px
+      display: none
+
+header
+  .header-wrapper
+    nav
+      ul
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style-type: none
+        padding: 0
+        margin: 0
+
+.header-wrapper
+  nav
+    a
+      padding-left: 15px
+      padding-right: 15px
+      margin-right: 15px
+      font-size: 13px
+      color: $primary-color
+      &:hover
+        color: $primary-color-light
+
+.header-wrapper
+  nav
+    a.active
+      color: $secondary-color
+      &:hover
+        color: $secondary-color-light
+
+.header-wrapper
+  a.admin-link
+    font-size: 13px
+    color: $primary-color
+    &:hover
+      color: $primary-color-light
+
+.header-wrapper
+  a.admin-link
+    img
+      height: 24px
+
+@media all and (max-width: 950px)
+  body
+    header
+      .header-wrapper
+        width: 98%
+
+  header
+    .header-wrapper
+      .header-menu-btn
+        display: flex
+
+  .header-wrapper
+    a.admin-link
+      span
+        display: none
+
+  header
+    .header-wrapper
+      nav
+        position: fixed
+        width: 100%
+        height: 100%
+        top: 50px
+        left: 0
+        z-index: 10
+        background-color: rgba(0,0,0,0.3)
+        display: none
+
+  header
+    .header-wrapper
+      nav.open
+        display: block
+
+  header
+    .header-wrapper
+      nav
+        ul
+          width: 85%
+          height: 100%
+          flex-direction: column
+          justify-content: flex-start
+          align-items: flex-start
+          background-color: white
+
+  .header-wrapper
+    nav
+      a
+        width: 100%
+        height: 50px
+        margin-left: 10px
+        padding-left: 0
+        padding-right: 0
+        margin-right: 0

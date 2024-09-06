@@ -2,8 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="{{ asset('img/logo.png') }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -14,7 +16,9 @@
     </head>
     <body>
         {% include 'components/header.html.twig' %}
-        {% block main %}{% endblock %}
+        <main>
+            {% block main %}{% endblock %}
+        </main>
         {% include 'components/footer.html.twig' %}
     </body>
 </html>

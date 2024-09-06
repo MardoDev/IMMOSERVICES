@@ -25,6 +25,7 @@
         "build": "encore production --progress"
     },
     "dependencies": {
+        "animate.css": "^4.1.1",
         "bootstrap": "^5.3.3",
         "vue-router": "^4.4.3"
     }
