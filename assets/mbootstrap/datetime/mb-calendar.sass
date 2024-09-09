@@ -1,0 +1,269 @@
+
+///mb-calendar-style
+mb-calendar
+  display: block
+  min-width: 300px
+  width: auto
+  height: auto
+  background: #fdfdfd
+  overflow: hidden
+  padding: 15px
+  position: relative
+  font-family: "Roboto", sans-serif
+
+mb-calendar
+  .mb-cal-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-weight: 600
+    font-size: 100px
+    color: #151426
+    //border: 1px solid black
+    margin-bottom: 0
+
+mb-calendar
+  .mb-cal-header
+    span
+      font-size: 18px
+//border: 1px solid black
+
+mb-calendar
+  .mb-cal-header
+    .mb-cal-month-pick
+      padding: 5px 10px
+      cursor: pointer
+      border-radius: 5px
+      &:hover
+        background-color: #e1e1e1
+
+mb-calendar
+  .mb-cal-header
+    .mb-cal-year-picker
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+mb-calendar
+  .mb-cal-header
+    .mb-cal-year-prev
+      margin-right: 7px
+
+mb-calendar
+  .mb-cal-header
+    .mb-cal-year-next
+      margin-left: 7px
+
+mb-calendar
+  .mb-cal-header
+    .mb-cal-year-control
+      display: grid
+      place-items: center
+      height: 35px
+      width: 35px
+      border-radius: 100%
+      padding: 5px 10px
+      cursor: pointer
+      &:hover
+        background-color: #e1e1e1
+
+//mb-calendar
+//  .mb-cal-body
+    //border: 1px solid black
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-week
+      height: 35px
+      display: grid
+      margin-top: 15px
+      grid-template-columns: repeat(7, 1fr)
+      font-weight: 300
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-week
+      span
+        display: grid
+        place-items: center
+        color: #c3c2c8
+
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-days
+      display: grid
+      grid-template-columns: repeat(7, 1fr)
+      gap: 2px
+      color: var(--color-txt)
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day
+      width: 35px
+      height: 35px
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+      cursor: pointer
+      animation: to-top 1s forwards
+/* border-radius: 50%; */
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day.inactive
+      color: #aaa
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day.selected
+      background: #6495ED
+      font-weight: 700
+      border-radius: 50%
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day
+      span
+        position: absolute
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day:hover
+      span
+        transition: width 0.3s ease-in-out, height 0.3s ease-in-out
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day
+      span:nth-child(1)
+        width: 2px
+        height: 0
+        bottom: 0
+        left: 0
+        background-color: #151426
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day
+      span:nth-child(2)
+        width: 0
+        height: 2px
+        top: 0
+        left: 0
+        background-color: #151426
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day
+      span:nth-child(3)
+        width: 2px
+        height: 0
+        top: 0
+        right: 0
+        background-color: #151426
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day
+      span:nth-child(4)
+        width: 0
+        height: 2px
+        bottom: 0
+        right: 0
+        background-color: #151426
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day:hover
+      span:nth-child(1)
+        height: 100%
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day:hover
+      span:nth-child(2)
+        width: 100%
+        transition-delay: 0.2s
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day:hover
+      span:nth-child(3)
+        height: 100%
+        transition-delay: 0.4s
+
+mb-calendar
+  .mb-cal-body
+    .mb-cal-day:hover
+      span:nth-child(4)
+        width: 100%
+        transition-delay: 0.6s
+
+mb-calendar
+  .mb-cal-month-picker
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: white
+    padding: 20px
+    transform: scale(1.5)
+    visibility: hidden
+    pointer-events: none
+
+mb-calendar
+  .mb-cal-month-picker.show
+    transform: scale(1)
+    visibility: visible
+    pointer-events: visible
+    transition: all 0.2s ease-in-out
+
+mb-calendar
+  .mb-cal-month-picker
+    .mb-cal-month-picker-items
+      grid-template-columns: repeat(3, auto)
+      gap: 5px
+      display: grid
+      height: 100%
+
+mb-calendar
+  .mb-cal-month-picker
+    .mb-cal-month-picker-items
+      div
+        display: grid
+        height: 35px
+        place-items: center
+        padding: 5px 10px
+        border-radius: 7px
+        text-align: center
+        cursor: pointer
+        color: #151426
+        &:hover
+          background-color: #e1e1e1
+
+mb-calendar
+  .mb-cal-month-picker
+    .mb-cal-month-picker-cancel
+      font-size: 18px
+      display: grid
+      place-items: center
+      height: 35px
+      width: 35px
+      border-radius: 100%
+      padding: 5px 10px
+      cursor: pointer
+      &:hover
+        background-color: #e1e1e1
+
+
+@keyframes to-top
+  0%
+    transform: translateY(100%)
+    opacity: 0
+
+  100%
+    transform: translateY(0)
+    opacity: 1

@@ -1,0 +1,108 @@
+mb-list-field
+  display: inline-block
+  min-width: 250px
+  width: 100%
+  height: auto
+  background: #fdfdfd
+  padding: 5px
+  font-family: "Roboto", sans-serif
+
+mb-list-field.popup-common-effect
+  padding: 5px
+
+mb-list-field
+  .mb-list-field-container
+    width: 100%
+    height: auto
+    max-height: 300px
+    overflow-y: auto
+
+mb-list-field
+  .mb-list-field-container
+    button
+      outline: none
+      border: none
+      display: flex
+      align-items: center
+      min-height: 35px
+      width: 100%
+      background-color: transparent
+      &:hover
+        background-color: #F4F3F5
+
+mb-list-field
+  .mb-list-field-container
+    button
+      span.material-symbols-outlined
+        margin-left: 15px
+        //margin-right: 10px
+        color: cornflowerblue
+        visibility: hidden
+        font-size: 20px
+
+mb-list-field
+  .mb-list-field-container
+    button
+      input
+        margin-left: 15px
+        //margin-right: 15px
+
+mb-list-field
+  .mb-list-field-container
+    button
+      input:checked
+        background-color: #6495ED
+
+mb-list-field
+  .mb-list-field-container
+    button.selected
+      span.material-symbols-outlined
+        visibility: visible
+
+mb-list-field
+  .mb-list-field-container
+    button.selected
+      background-color: #C2E7FF
+      &:hover
+        background-color: #B3D7EF
+
+mb-list-field
+  .mb-list-field-container
+    button
+      .mb-list-field-label
+        margin-left: 15px
+        font-family: "Roboto", sans-serif
+
+mb-list-field
+  .mb-list-field-footer
+    display: none
+
+mb-list-field.multiple
+  .mb-list-field-container
+    button.selected
+      span.material-symbols-outlined
+        display: none
+
+mb-list-field.multiple
+  .mb-list-field-footer
+    display: flex
+    margin-top: 10px
+    height: 40px
+    justify-content: right
+    align-items: center
+    border-top: 1px solid #e1e1e1
+
+mb-list-field
+  .mb-list-field-footer
+    button
+      outline: none
+      border: none
+      background-color: transparent
+      color: #6495ED
+      padding: 5px
+      border-radius: 5px
+      margin-left: 7px
+      margin-right: 7px
+      font-weight: bold
+      &:hover
+        background-color: #C2E7FF

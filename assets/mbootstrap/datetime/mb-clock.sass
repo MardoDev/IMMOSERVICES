@@ -1,0 +1,130 @@
+mb-clock
+  display: inline-block
+  min-width: 250px
+  width: auto
+  height: auto
+  background: #fdfdfd
+  overflow: hidden
+  padding: 15px
+  position: relative
+  font-family: "Roboto", sans-serif
+
+mb-clock
+  .mb-clock-body
+    //display: grid
+    //grid-template-columns: 1fr 40px
+    //gap: 10px
+    margin-top: 15px
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-main
+      display: flex
+      align-items: center
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-main
+      .mb-clock-divider
+        margin-left: 10px
+        margin-right: 10px
+        margin-bottom: 15px
+        font-size: 35px
+        padding: 0
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-main
+      .input-wrapper
+        width: 125px
+        display: flex
+        flex-direction: column
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-main
+      .input-wrapper
+        input
+          height: 50px
+          padding: 5px
+          border-radius: 5px
+          outline: none
+          background-color: #DFE4D6
+          font-size: 20px
+          text-align: center
+          border: none
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-main
+      .input-wrapper
+        span
+          font-size: 12px
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-main
+      .input-wrapper
+        input:focus
+          //border: 1px solid #386A20
+          background-color: #B8F397
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-type
+      width: 40px
+      display: grid
+      grid-template-columns: 1fr
+      place-items: center
+      border: 1px solid black
+      border-radius: 5px
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-type
+      span
+        display: grid
+        place-items: center
+        width: 100%
+        padding: 5px
+        margin: 0
+        cursor: pointer
+        font-weight: 600
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-type
+      span.active
+        background-color: #BBEBEB
+        color: black
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-type
+      span:nth-child(1)
+        border-bottom: 1px solid black
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+
+mb-clock
+  .mb-clock-body
+    .mb-clock-type
+      span:nth-child(2)
+        border-bottom-left-radius: 5px
+        border-bottom-right-radius: 5px
+
+mb-clock
+  .mb-clock-footer
+    text-align: right
+    margin-top: 25px
+
+mb-clock
+  .mb-clock-footer
+    span
+      padding: 5px 10px
+      cursor: pointer
+      font-weight: 600
+      color: #55803F
+      border-radius: 5px
+      &:hover
+        background-color: #e1e1e1

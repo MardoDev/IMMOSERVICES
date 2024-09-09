@@ -21,6 +21,7 @@ Encore
      * and one CSS file (e.g. app.sass) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/app.js')
+    .addEntry('app_login', './assets/scripts/security/login.ts')
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
     .splitEntryChunks()

@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('app_login') }}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('app_login') }}
+{% endblock %}
+
+{% block main %}
+<section id="auth-wrapper">
+    <div class="form-container">
+
+        <figure>
+            <img src="{{ asset("img/logo.png") }}" />
+        </figure>
+        <h1>Connexion à l'espace Admin</h1>
+
+        {% if error %}
+            <div class="alert alert-danger">
+                <!--{{ error.messageKey|trans(error.messageData, 'security') }}-->
+                Email ou Mot de passe incorrect
+            </div>
+        {% endif %}
+
+        {% if app.user %}
+            <div class="mb-3">
+                You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+            </div>
+        {% endif %}
+
+        <form method="post">
+
+            <div class="mb-field">
+                <mb-text-field label="Email" name="email" text="{{ last_username }}" type="email" required="true" />
+            </div>
+
+            <div class="mb-field">
+                <mb-text-field label="Mot de passe" name="password" type="password" required="true" />
+            </div>
+            <!--<label for="inputEmail">Email</label>
+            <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+            <label for="inputPassword">Password</label>
+            <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>-->
+
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}" />
+
+            <div class="checkbox mb-3">
+                <input type="checkbox" name="_remember_me" id="_remember_me" style="margin-right: 7px">
+                <label for="_remember_me">Remember me</label>
+            </div>
+
+            <button class="btn btn-success df-center" type="submit">
+                Sign in
+            </button>
+        </form>
+
+    </div>
+</section>
+{% endblock %}

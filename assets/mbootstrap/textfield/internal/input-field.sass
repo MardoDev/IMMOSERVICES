@@ -1,0 +1,99 @@
+.mb-input-field
+  display: inline-block
+  width: 100%
+  height: auto
+  position: relative
+  background-color: transparent
+
+.mb-input-field
+  .mb-input-field-label
+    font-size: 11px
+    font-family: sans-serif
+    margin-left: 10px
+    padding: 0
+
+.mb-input-field
+  .mb-input-field-form-control
+    align-items: center
+    width: 100%
+    background: #fff
+    border-bottom: 1px solid grey
+    border-radius: 5px
+    box-shadow: 0 0 1px hsla(0,0%,50%,.6)
+    display: flex
+    padding: 3px 10px
+
+.mb-input-field
+  .mb-input-field-form-control
+    .input
+      background: none
+      border: none
+      font-family: "Roboto", sans-serif
+      font-weight: 400
+      font-style: normal
+      font-size: 13px
+      height: 35px
+      outline: none
+      width: 100%
+
+.mb-input-field
+  .mb-input-field-form-control
+    textarea
+      min-height: 150px
+
+.mb-input-field
+  .mb-input-field-form-control
+    .dropdown
+      display: none
+
+.mb-input-field.dropdown
+  .mb-input-field-form-control
+    .dropdown
+      display: inline
+      cursor: pointer
+      font-weight: 200
+      color: #6F6F6F
+      font-size: 20px
+
+.mb-input-field
+  .mb-input-field-form-control
+    span.error-icon
+      color: red
+      cursor: pointer
+      font-size: 15px
+      display: none
+
+.mb-input-field
+  .mb-input-field-error-label
+    position: absolute
+    width: 100%
+    background-color: #FAFAFA
+    z-index: 1000
+    padding-left: 10px
+    display: none
+
+.mb-input-field
+  .mb-input-field-error-label
+    span
+      font-size: 11px
+      color: red
+      font-family: "Roboto", sans-serif
+
+.mb-input-field.focus
+  .mb-input-field-form-control
+    border-bottom: 2px solid cornflowerblue
+    //box-shadow: 0 0 1px cornflowerblue
+
+.mb-input-field.error
+  .mb-input-field-form-control
+    border-bottom: 2px solid red
+    //box-shadow: 0 0 1px red
+
+.mb-input-field.error
+  .mb-input-field-form-control
+    span.error-icon
+      display: inline
+
+.mb-input-field
+  .mb-input-field-error-label.error
+    display: block
