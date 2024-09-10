@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+{% block stylesheets %}
+  {# {{ parent() }}
+    {{ encore_entry_script_tags('app_home_page') }} #}
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/app_home_page.css') }}">
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('app_home_page') }}
+{% endblock %}
+
+{% block main %}
+       <section class="banner">
+               <div class="banner-image" style="background: url({{ asset('images/homePage/banner.png') }}) center no-repeat">
+                   <div class="contact">Tél: 05 500 90 00</div>
+               </div>
+
+               <div class="description-banner">
+                   <div class="description-banner-container">
+
+                   </div>
+                      <h3>APPARTEMENTS 6 PIECES MEUBLE AU CENTRE VILLE</h3>
+                      <div class="description-para">
+                            Paragraphe. Cliquez ici pour ajouter votre propre texte.
+                            Cliquez sur "Modifier Texte"
+                            ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices.
+                      </div>
+                      <h4 class="description-montant"> 45.000 FCFA </h4>
+                      <div class="description-savoir">
+                            <a href="#">En savoir plus</a>
+                      </div>
+               </div>
+       </section>
+       <section class="presentations" >
+           <div class="presentation-left size">
+               <img src="{{ asset("images/homePage/aboutus.png") }}" alt="image de présentation" />
+           </div>
+           <div class="presentation-right">
+               <h2>QUI SOMMES NOUS</h2>
+               <div class="presentation-para size">
+                   <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur "Modifier Texte" ou double-cliquez
+                       ici pour ajouter votre contenu et personnaliser les polices.
+                   </p>
+                   <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur "Modifier Texte" ou double-cliquez
+                       ici pour ajouter votre contenu et personnaliser les polices.
+                   </p>
+               </div>
+               <div>
+                   <a href="#">En Savoir plus</a>
+               </div>
+           </div>
+       </section>
+{% endblock %}
+
+
