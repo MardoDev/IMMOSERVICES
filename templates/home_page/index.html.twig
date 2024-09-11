@@ -4,6 +4,8 @@
 {% block stylesheets %}
   {# {{ parent() }}
     {{ encore_entry_script_tags('app_home_page') }} #}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('build/app.css') }}">
     <link rel="stylesheet" href="{{ asset('build/app_home_page.css') }}">
 {% endblock %}
@@ -14,7 +16,20 @@
 
 {% block main %}
        <section class="banner">
-               <div class="banner-image" style="background: url({{ asset('images/homePage/banner.png') }}) center no-repeat">
+                   <div class="banner-image" >
+                       <div id="carouselExampleAutoplaying" class="carousel slide carousel-image-size" data-bs-ride="carousel">
+                           <div class="carousel-inner" >
+                               <div class="carousel-item active" >
+                                   <img src="{{ asset("images/homePage/propriete2.jpg") }}" class="d-block w-100" alt="...">
+                               </div>
+                               <div class="carousel-item active">
+                                   <img src="{{ asset("images/homePage/propriete5.jpg") }}" class="d-block w-100" alt="...">
+                               </div>
+                               <div class="carousel-item">
+                                  <img src="{{ asset("images/homePage/banner.png") }}" class="d-block w-100" alt="...">
+                               </div>
+                           </div>
+                       </div>
                    <div class="contact">Tél: 05 500 90 00</div>
                </div>
 
@@ -29,17 +44,18 @@
                             ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices.
                       </div>
                       <h4 class="description-montant"> 45.000 FCFA </h4>
-                      <div class="description-savoir">
-                            <a href="#">En savoir plus</a>
-                      </div>
+
+                     <a href="#" class="description-savoir">En savoir plus</a>
+
                </div>
        </section>
+    {##################################### Section 2 #########################################################}
        <section class="presentations" >
-           <div class="presentation-left size">
+           <div class="presentation-left ">
                <img src="{{ asset("images/homePage/aboutus.png") }}" alt="image de présentation" />
            </div>
            <div class="presentation-right">
-               <h2>QUI SOMMES NOUS</h2>
+               <h4>QUI SOMMES NOUS</h4>
                <div class="presentation-para size">
                    <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur "Modifier Texte" ou double-cliquez
                        ici pour ajouter votre contenu et personnaliser les polices.
@@ -49,10 +65,172 @@
                    </p>
                </div>
                <div>
-                   <a href="#">En Savoir plus</a>
+                   <a href="#" class="button">En Savoir plus</a>
                </div>
            </div>
        </section>
+    {# Fin de la section présentation #}
+      {# -------------------------------------- Section propriétés -------------------------------------- #}
+    <section class="class-propriete">
+          <h2 class="title-propriete">NOS PROPRIETES</h2>
+          <div class="container-propriete">
+                 <div class="card-propriete">
+                      <div class="card-head">
+                          <img src="{{ asset('images/homePage/propriete1.jpg') }}" alt="image de la premiere propriete"/>
+                          <span class="status">ACHAT</span>
+                      </div>
+                      <div class="card-body">
+                           <h3 class="card-ruelle">47 rue des Couronnes</h3>
+                           <p class="card-description">Paris, France</p>
+                           <p>850 000 €</p>
+                           <hr/>
+                           <div class="container-icons">
+                                <div class="chambre">
+                                    <img src="{{ asset('images/icons/lit.png') }}" alt="Chambre">
+                                    <p>Chambres</p>
+                                    <p class="nombre">4</p>
+                                </div>
+                               <div class="chambre">
+                                    <img src="{{ asset('images/icons/baignoire.png') }}" alt="Chambre">
+                                    <p>SdB</p>
+                                    <p class="nombre">2</p>
+                                </div>
+                               <div class="chambre">
+                                   <img src="{{ asset('images/icons/etage.png') }}" alt="Chambre">
+                                   <p>Etages</p>
+                                   <p class="nombre">3</p>
+                               </div>
+                               <div class="chambre">
+                                   <img src="{{ asset('images/icons/surface.png') }}" alt="Chambre">
+                                   <p>m²</p>
+                                   <p class="nombre">1234</p>
+                               </div>
+                           </div>
+
+                      </div>
+                 </div>
+                 <div class="card-propriete">
+                          <div class="card-head">
+                              <img src="{{ asset('images/homePage/propriete2.jpg') }}" alt="image de la premiere propriete"/>
+                              <span class="status">ACHAT</span>
+                          </div>
+                          <div class="card-body">
+                               <h3 class="card-ruelle">47 rue des Couronnes</h3>
+                               <p class="card-description">Paris, France</p>
+                               <p>850 000 €</p>
+                               <hr/>
+                               <div class="container-icons">
+                                    <div class="chambre">
+                                        <img src="{{ asset('images/icons/lit.png') }}" alt="Chambre">
+                                        <p>Chambres</p>
+                                        <p class="nombre">4</p>
+                                    </div>
+                                   <div class="chambre">
+                                        <img src="{{ asset('images/icons/baignoire.png') }}" alt="Chambre">
+                                        <p>SdB</p>
+                                        <p class="nombre">2</p>
+                                    </div>
+                                   <div class="chambre">
+                                       <img src="{{ asset('images/icons/etage.png') }}" alt="Chambre">
+                                       <p>Etages</p>
+                                       <p class="nombre">3</p>
+                                   </div>
+                                   <div class="chambre">
+                                       <img src="{{ asset('images/icons/surface.png') }}" alt="Chambre">
+                                       <p>m²</p>
+                                       <p class="nombre">1234</p>
+                                   </div>
+                               </div>
+
+                          </div>
+                     </div>
+                 <div class="card-propriete">
+                  <div class="card-head">
+                      <img src="{{ asset('images/homePage/propriete3.jpg') }}" alt="image de la premiere propriete"/>
+                      <span class="status">ACHAT</span>
+                  </div>
+                  <div class="card-body">
+                      <h3 class="card-ruelle">47 rue des Couronnes</h3>
+                      <p class="card-description">Paris, France</p>
+                      <p>850 000 €</p>
+                      <hr/>
+                      <div class="container-icons">
+                          <div class="chambre">
+                              <img src="{{ asset('images/icons/lit.png') }}" alt="Chambre">
+                              <p>Chambres</p>
+                              <p class="nombre">4</p>
+                          </div>
+                          <div class="chambre">
+                              <img src="{{ asset('images/icons/baignoire.png') }}" alt="Chambre">
+                              <p>SdB</p>
+                              <p class="nombre">2</p>
+                          </div>
+                          <div class="chambre">
+                              <img src="{{ asset('images/icons/etage.png') }}" alt="Chambre">
+                              <p>Etages</p>
+                              <p class="nombre">3</p>
+                          </div>
+                          <div class="chambre">
+                              <img src="{{ asset('images/icons/surface.png') }}" alt="Chambre">
+                              <p>m²</p>
+                              <p class="nombre">1234</p>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+                 <div class="card-propriete">
+                  <div class="card-head">
+                      <img src="{{ asset('images/homePage/propriete4.jpg') }}" alt="image de la premiere propriete"/>
+                      <span class="status">ACHAT</span>
+                  </div>
+                  <div class="card-body">
+                      <h3 class="card-ruelle">47 rue des Couronnes</h3>
+                      <p class="card-description">Paris, France</p>
+                      <p>850 000 €</p>
+                      <hr/>
+                      <div class="container-icons">
+                          <div class="chambre">
+                              <img src="{{ asset('images/icons/lit.png') }}" alt="Chambre">
+                              <p>Chambres</p>
+                              <p class="nombre">4</p>
+                          </div>
+                          <div class="chambre">
+                              <img src="{{ asset('images/icons/baignoire.png') }}" alt="Chambre">
+                              <p>SdB</p>
+                              <p class="nombre">2</p>
+                          </div>
+                          <div class="chambre">
+                              <img src="{{ asset('images/icons/etage.png') }}" alt="Chambre">
+                              <p>Etages</p>
+                              <p class="nombre">3</p>
+                          </div>
+                          <div class="chambre">
+                              <img src="{{ asset('images/icons/surface.png') }}" alt="Chambre">
+                              <p>m²</p>
+                              <p class="nombre">1234</p>
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+          <div class="link">
+              <a href="#" class="button btn-voir">Voir plus</a>
+          </div>
+    </section>
+    {# Fin de la section des propriétés #}
+    {# ----------------------------------------Section confiance ---------------------------------------- #}
+    <section class="section-confiance">
+        <h1>UNE AGENCE DE CONFIANCE</h1>
+        <div class="container-cardConfiance">
+
+        </div>
+    </section>
+    <script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </script>
 {% endblock %}
 
 

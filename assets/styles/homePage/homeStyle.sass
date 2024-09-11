@@ -2,8 +2,10 @@
 @import "../font"
 
 body
-
-
+  overflow-x: hidden
+  a
+    text-decoration: none
+body
  main
    .banner
       margin: 0
@@ -15,25 +17,37 @@ body
 
  main
   .banner
-
     .banner-image
       height: 84%
       width: auto
-      background-size: cover
 
 
-      .contact
-            background-color: $primary-color
-            font-weight: lighter
-            height: 40px
-            width: 195px
-            display: flex
-            align-items: center
-            justify-content: center
-            color: #ffffff
-            position: absolute
-            top: 0
-            right: 18rem
+main
+  .banner
+    .carousel-inner
+      height: 35rem
+
+main
+  .banner
+    .carousel-inner
+      img
+        height: 35rem
+
+main
+  .banner
+    .contact
+      background-color: $primary-color
+      font-weight: lighter
+      height: 40px
+      width: 195px
+      display: flex
+      align-items: center
+      justify-content: center
+      color: #ffffff
+      position: absolute
+      top: 0
+      right: 18rem
+
     .description-banner
         padding: 0 2rem
         width: 16rem
@@ -41,7 +55,7 @@ body
         background-color: rgba(1, 59, 97, 0.81)
         color: #ffffff
         position: absolute
-        left: 5rem
+        left: 11rem
         bottom: 1rem
         display: flex
         flex-direction: column
@@ -52,34 +66,131 @@ body
         .description-para
           padding-bottom: 20px
         .description-savoir
-           border: 1px solid #ffffff
-           width: 150px
-           height: 45px
-           display: flex
-           align-items: center
-           justify-content: center
-           transform: translateX(31%)
+          cursor: pointer
+          border: 1px solid #ffffff
+          width: 150px
+          height: 45px
+          display: flex
+          align-items: center
+          justify-content: center
+          transform: translateX(14%)
+          text-decoration: none
+          color: #ffffff
 
-           a
-            text-decoration: none
-            color: #ffffff
         .description-montant
           display: flex
           align-items: center
           justify-content: center
           padding-top: 0.6rem
-          margin-bottom:  2rem
-          padding-bottom: 40px
+          margin-bottom:  1rem
+          padding-bottom: 0
 
 
 body
   main
+    .button
+      color: black
+      border: 1px solid #093553
+      width: 150px
+      height: 45px
+      display: flex
+      align-items: center
+      justify-content: center
+
+body
+  main
       .presentations
-          display: flex
+        display: flex
+        width: 100vw
+        flex-wrap: wrap
+        margin: 0.5rem 0 1rem 0
+
+      .presentations
+          img
+             width: 450px
+body
+  main
+    .presentations
+      .presentation-right
+        width: 450px
+        padding-left: 5rem
+        a
+          color: black
+          border: 1px solid #093553
+          margin-top: 3rem
+        h4
+          font-size: 20px
+          margin-bottom: 1rem
+          font-weight: 700
 
 
+body
+  main
+    .presentations
+      .presentation-left
+        padding-left: 7rem
 
 
+main
+  .class-propriete
+    margin : 4rem 0
+    width: 100vw
+    .status
+      z-index: -999999999
+      background-color: red
+      color: white
+      display: inline-block
+      width: 50px
+      text-align: center
+      height: 17px
+      font-size: 10px
+      transform: translateY(-1.5rem)
+    .btn-voir
+      background-color: $primary-color
+      color: #ffffff
+    .title-propriete
+      padding-bottom: 2rem
+      display: flex
+      justify-content: center
+    .container-propriete
+      display: flex
+      justify-content: space-evenly
+      flex-wrap: wrap
+      margin-bottom: 3rem
+      .card-propriete
+        height: 430px
+        width: 250px
+        box-shadow: 0 0 10px rgba(229, 224, 224, 0.84)
+        border-radius: 0.2rem
+        overflow: hidden
+        .card-body
+          margin-top: 1rem
+          padding: 10px
+          hr
+            position: relative
+            z-index: -999
+          .container-icons
+            display: flex
+            justify-content: space-around
+            .chambre
+              img
+                padding-bottom: 8px
+          h3
+            font-size: 20px
+            font-weight: 700
+        .card-head
+          width: 100%
+          height: 10rem
+          position: relative
+          z-index: -999
+          img
+           width: 100%
+           height: 100%
+
+    .link
+      width: 100vw
+      display: flex
+      justify-content: center
 
 
 
