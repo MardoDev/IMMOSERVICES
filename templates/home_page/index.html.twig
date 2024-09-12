@@ -21,19 +21,65 @@
                            <div class="carousel-inner" >
                                <div class="carousel-item active" >
                                    <img src="{{ asset("images/homePage/propriete2.jpg") }}" class="d-block w-100" alt="...">
+                                   <div class="description-banner">
+                                       <div class="description-banner-container">
+
+                                       </div>
+                                       <h3>APPARTEMENTS 5 PIECES MEUBLE AU CENTRE VILLE</h3>
+                                       <div class="description-para">
+                                           Paragraphe. Cliquez ici pour ajouter votre propre texte.
+                                           Cliquez sur "Modifier Texte"
+                                           ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices.
+                                       </div>
+                                       <h4 class="description-montant"> 45.000 FCFA </h4>
+
+                                       <a href="#" class="description-savoir">En savoir plus</a>
+
+                                   </div>
+
                                </div>
                                <div class="carousel-item active">
                                    <img src="{{ asset("images/homePage/propriete5.jpg") }}" class="d-block w-100" alt="...">
+                                   <div class="description-banner">
+                                       <div class="description-banner-container">
+
+                                       </div>
+                                       <h3>APPARTEMENTS 6 PIECES MEUBLE AU CENTRE VILLE</h3>
+                                       <div class="description-para">
+                                           Paragraphe. Cliquez ici pour ajouter votre propre texte.
+                                           Cliquez sur "Modifier Texte"
+                                           ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices.
+                                       </div>
+                                       <h4 class="description-montant"> 45.000 FCFA </h4>
+
+                                       <a href="#" class="description-savoir">En savoir plus</a>
+
+                                   </div>
                                </div>
                                <div class="carousel-item">
                                   <img src="{{ asset("images/homePage/banner.png") }}" class="d-block w-100" alt="...">
+                                   <div class="description-banner">
+                                       <div class="description-banner-container">
+
+                                       </div>
+                                       <h3>APPARTEMENTS 7 PIECES MEUBLE AU CENTRE VILLE</h3>
+                                       <div class="description-para">
+                                           Paragraphe. Cliquez ici pour ajouter votre propre texte.
+                                           Cliquez sur "Modifier Texte"
+                                           ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices.
+                                       </div>
+                                       <h4 class="description-montant"> 45.000 FCFA </h4>
+
+                                       <a href="#" class="description-savoir">En savoir plus</a>
+
+                                   </div>
                                </div>
                            </div>
                        </div>
                    <div class="contact">Tél: 05 500 90 00</div>
                </div>
 
-               <div class="description-banner">
+            {#   <div class="description-banner">
                    <div class="description-banner-container">
 
                    </div>
@@ -47,7 +93,7 @@
 
                      <a href="#" class="description-savoir">En savoir plus</a>
 
-               </div>
+               </div>#}
        </section>
     {##################################### Section 2 #########################################################}
        <section class="presentations" >
@@ -224,12 +270,104 @@
     <section class="section-confiance">
         <h1>UNE AGENCE DE CONFIANCE</h1>
         <div class="container-cardConfiance">
-
+              <div class="cardConfiance">
+                  <div class="cardConfiance-icon">
+                        <img src="{{ asset('images/icons/tache.png') }}" alt="..." />
+                  </div>
+                  <div class="cardConfiance-title">
+                      <h4>AUCUN FRAIS<br/> DE DOSSIER</h4>
+                  </div>
+                  <div class="cardConfiance-body">
+                      <p>
+                          Paragraphe. Cliquez ici pour <br/>  ajouter votre texte.<br/> Présetez-vous et votre entreprise
+                      </p>
+                  </div>
+              </div>
+              <div class="cardConfiance">
+                <div class="cardConfiance-icon">
+                    <img src="{{ asset('images/icons/calque.png') }}" alt="..." />
+                </div>
+                <div class="cardConfiance-title">
+                    <h4>VISITES<br/> PARTICULIERS</h4>
+                </div>
+                <div class="cardConfiance-body">
+                    <p>
+                        Paragraphe. Cliquez ici pour <br/>  ajouter votre texte.<br/> Présetez-vous et votre entreprise
+                    </p>
+                </div>
+            </div>
+              <div class="cardConfiance">
+                <div class="cardConfiance-icon">
+                    <img src="{{ asset('images/icons/carte.png') }}" alt="..." />
+                </div>
+                <div class="cardConfiance-title">
+                    <h4>4 AGENCES EN<br/> VILLE</h4>
+                </div>
+                <div class="cardConfiance-body">
+                    <p>
+                        Paragraphe. Cliquez ici pour <br/>  ajouter votre texte.<br/> Présetez-vous et votre entreprise
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
+    {# Fin section confiance #}
+    {# ---------------------------------------- Section Témoignage--------------------------------------- #}
+
+    <section class="section-temoignage" style="background:  url({{ asset('images/homePage/bgTemoignage.jpg') }})   ">
+        <div class="overlay" style="background:  rgba(10,9,9,0.22) ">
+            <h4>TEMOIGNAGES</h4>
+            <div class="ContainerTemoignages">
+                <div class="temoignage">
+                    <div class="tImage"> <img src="{{ asset('images/icons/quote-left.svg') }}" alt="..." /> </div>
+                    <div>
+                        <a href="#">
+                            <q>
+                                Je suis un témoignage. Cliquez pour me modifier et valoriser votre activité. Vos cients peuvent ici partager leurs expériences
+                            </q>
+                        </a>
+                    </div>
+                    <p class="tParagraph">-Aline et Jean Martin</p>
+                </div>
+                <div class="temoignage">
+                    <div class="tImage"> <img src="{{ asset('images/icons/quote-left.svg') }}" alt="..." /> </div>
+                    <div>
+                        <a href="#">
+                            <q>
+                                Je suis un témoignage. Cliquez pour me modifier et valoriser votre activité. Vos cients peuvent ici partager leurs expériences
+                            </q>
+                        </a>
+                    </div>
+                    <p class="tParagraph">-Aline et Jean Martin</p>
+                </div>
+                <div class="temoignage">
+                    <div class="tImage"> <img src="{{ asset('images/icons/quote-left.svg') }}" alt="..." /> </div>
+                    <div>
+                        <a href="#">
+                            <q>
+                                Je suis un témoignage. Cliquez pour me modifier et valoriser votre activité. Vos cients peuvent ici partager leurs expériences
+                            </q>
+                        </a>
+                    </div>
+                    <p class="tParagraph">-Aline et Jean Martin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {# ----------------------------------------- Fin section Témoignage --------------------------------- #}
+    <section class="sectionBlog">
+         <h4>LE BLOG</h4>
+         <div class="blog">
+
+         </div>
+         <a class="btn-blog" href="#">Le blog Immoservices</a>
+    </section>
+
+
+
     <script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </script>
 {% endblock %}
 
