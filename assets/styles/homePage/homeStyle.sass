@@ -3,6 +3,7 @@
 
 body
   overflow-x: hidden
+  width: 100vw
   a
     text-decoration: none
 body
@@ -159,7 +160,7 @@ main
       flex-wrap: wrap
       margin-bottom: 3rem
       .card-propriete
-        margin: 1rem 0
+        margin: 1rem 0.5rem
         height: 430px
         width: 250px
         box-shadow: 0 0 10px rgba(229, 224, 224, 0.84)
@@ -232,7 +233,6 @@ body
   main
     .section-temoignage
       width: 100vw
-      height: 35rem
       background-color: #dc0a0a
       h4
         padding-top: 8.67rem
@@ -251,6 +251,7 @@ body
         display: flex
         align-items: center
         justify-content: center
+        flex-wrap: wrap
         width: 100vw
         .temoignage
           margin: 1rem 3rem
@@ -271,6 +272,72 @@ body
             color: rgba(252, 180, 4, 0.93)
           q
             font-weight: 100
+body
+  main
+    .sectionBlog
+      margin: 1rem 0
+      z-index: -999
+      .title-blog
+        font-weight: 900
+        font-size: 30px
+        margin-left:  14.5rem
+      .btn-blog
+        margin-left: 14.5rem
+        padding: 0.5rem 1.5rem
+        border: 1px solid #232426
+        border-radius: 50px
 
 
+      .swiper
+        max-width: 1100px
+        margin: 0 60px 35px
+        overflow: hidden
+        position: relative
+        height: 20rem
+        padding: 0 1.5rem
+        .swiper-button-prev
+          margin: 0
+        .swiper-wrapper
+          width: 60vw
+
+        .card
+          z-index: -999
+          max-width: 24rem
+          display: block
+          background: #ffffff
+          padding: 12px
+          margin: 0 0.2rem
+          border-radius: 12px
+          border: 2px solid transparent
+          box-shadow: 0 10px 10px rgba(0,0,0,0.05)
+          transition: 0.2s ease
+          &:hover
+            border-color: #5372F0
+          .card-title
+            font-size: 1rem
+            transform: translateY(-1rem)
+            font-weight: 600
+            padding-top: 0.7rem
+          .card-description
+            padding-top: 0.79rem
+            font-size: 0.6rem
+            color: darkorange
+          .card-image
+            height: 170px
+            width: 100%
+            object-fit: cover
+            border-radius: 10px
+          .button-swiper
+            position: absolute
+            transform: translateY(-30rem)
+
+
+@media all and (max-width: 768px)
+  body
+    overflow-x: hidden
+    width: 100vw
+  .button-swiper
+    display: none
+  .banner
+    width: 100vw
 
