@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    spaceBetween: 40,
+    spaceBetween: 30,
 
 
 

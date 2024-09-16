@@ -1,0 +1,92 @@
+@import "../color"
+@import "../font"
+
+
+body
+  main
+    .bar-property
+      margin-top: 3.5rem
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100vw
+      .bar-container
+        border: 1.5px solid #D5D5D5
+        width: 88%
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50px
+        //gap: 7rem
+        line-height: 0.65rem
+        div
+          height: 80%
+          width: 50%
+          display: flex
+          align-items: flex-start
+          flex-direction: column
+          padding-left: 2rem
+          p
+            color: #787373
+        div:not(:last-child)
+          border-right: 1px solid #D5D5D5
+
+        h5
+          font-size: 13px
+          font-weight: 600
+
+
+
+
+/*-----------------------------Style de detailBien.html.twig--------------------------------*/
+body
+  width: 100vw
+  main
+    .container-images
+      //margin: 0 2rem
+      width: 100%
+      //height: 20rem
+      //background: #0dcaf0
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      .images
+        width: 90%
+        height: 100%
+        border-radius: 15px
+        overflow: hidden
+        display: grid
+        grid-template-columns: repeat(auto-fill,minmax(230px,1fr))
+        //grid-template-columns: auto auto auto auto
+
+        grid-gap: 0.2rem
+        .yt-video
+          grid-row-start: 1
+          grid-row-end: 3
+          grid-column-start: 1
+          grid-column-end: 3
+          display: flex
+          align-items: center
+          justify-content: center
+          iframe
+            height: 100%
+            width: 100%
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+
+        .image1
+          background: #0f5132
+        .image2
+          background: #f6d10f
+        .image3
+          background: #32f60f
+        .image4
+          background: #c40ff6
+
+
+
+

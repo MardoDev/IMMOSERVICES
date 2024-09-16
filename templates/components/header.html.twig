@@ -3,9 +3,9 @@
         <a class="bl-link header-logo" href="{{ path("app_main") }}"><img src="{{ asset('img/logo.png') }}" alt="Logo" /><span>IMMO & SERVICES</span></a>
         <nav>
             <ul class="animate__animated">
-                <li><a href="#" class="df-center active">ACCEUIL</a></li>
-                <li><a href="#" class="df-center">A PROPOS DE NOUS</a></li>
-                <li><a href="#" class="df-center">NOS BIENS</a></li>
+                <li><a href="{{ path('app_home_page') }}" class="df-center active">ACCEUIL</a></li>
+                <li><a href="{{ path('app_page_about_us') }}" class="df-center">A PROPOS DE NOUS</a></li>
+                <li><a href="{{ path('app_biens_page') }}" class="df-center">NOS BIENS</a></li>
                 <li><a href="#" class="df-center">CARRIERES</a></li>
                 <li><a href="#" class="df-center">CONTACT</a></li>
             </ul>

@@ -1,0 +1,159 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos de nous{% endblock %}
+{% block stylesheets %}
+    {# {{ parent() }}
+    {{ encore_entry_script_tags('app_home_page') }} #}
+    {# Importation de boostrap #}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    {# Importation de swipper #}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/app_home_page.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/app_aboutus_page.css') }}">
+{% endblock %}
+{% block body %}
+  {% block main %}
+       <section class="section-bg" style="background: url({{ asset('images/homePage/banner.png') }}) no-repeat">
+           <div class="overlay-bg">
+               <h2>A PROPOS DE NOUS</h2>
+           </div>
+       </section>
+       <section class="section-presentation">
+           <div class="container-presentation">
+               <div class="item1">
+                   <img src="{{ asset("images/homePage/aboutus.png") }}" alt="image de présentation" />
+               </div>
+               <div class="item2">
+                   <div class="presentation-right">
+                       <h4>QUI SOMMES NOUS</h4>
+                       <div class="presentation-para size">
+                           <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur "Modifier Texte" ou double-cliquez
+                               ici pour ajouter votre contenu et personnaliser les polices.
+                           </p>
+                           <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur "Modifier Texte" ou double-cliquez
+                               ici pour ajouter votre contenu et personnaliser les polices.
+                           </p>
+                       </div>
+                       <div>
+                           <a href="#" class="button">En Savoir plus</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="item3">
+                   <div class="presentation-right">
+                       <h4>QUI SOMMES NOUS</h4>
+                       <div class="presentation-para size">
+                           <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur "Modifier Texte" ou double-cliquez
+                               ici pour ajouter votre contenu et personnaliser les polices.
+                           </p>
+                           <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur "Modifier Texte" ou double-cliquez
+                               ici pour ajouter votre contenu et personnaliser les polices.
+                           </p>
+                       </div>
+                       <div>
+                           <a href="#" class="button">En Savoir plus</a>
+                       </div>
+                   </div>
+               </div>
+               <div class="item4">
+                   <img src="{{ asset("images/homePage/aboutus.png") }}" alt="image de présentation" />
+               </div>
+           </div>
+       </section>
+       <section class="section-confiance">
+          <h1>UNE AGENCE DE CONFIANCE</h1>
+          <div class="container-cardConfiance">
+              <div class="cardConfiance">
+                  <div class="cardConfiance-icon">
+                      <img src="{{ asset('images/icons/tache.png') }}" alt="..." />
+                  </div>
+                  <div class="cardConfiance-title">
+                      <h4>AUCUN FRAIS<br/> DE DOSSIER</h4>
+                  </div>
+                  <div class="cardConfiance-body">
+                      <p>
+                          Paragraphe. Cliquez ici pour <br/>  ajouter votre texte.<br/> Présetez-vous et votre entreprise
+                      </p>
+                  </div>
+              </div>
+              <div class="cardConfiance">
+                  <div class="cardConfiance-icon">
+                      <img src="{{ asset('images/icons/calque.png') }}" alt="..." />
+                  </div>
+                  <div class="cardConfiance-title">
+                      <h4>VISITES<br/> PARTICULIERS</h4>
+                  </div>
+                  <div class="cardConfiance-body">
+                      <p>
+                          Paragraphe. Cliquez ici pour <br/>  ajouter votre texte.<br/> Présetez-vous et votre entreprise
+                      </p>
+                  </div>
+              </div>
+              <div class="cardConfiance">
+                  <div class="cardConfiance-icon">
+                      <img src="{{ asset('images/icons/carte.png') }}" alt="..." />
+                  </div>
+                  <div class="cardConfiance-title">
+                      <h4>4 AGENCES EN<br/> VILLE</h4>
+                  </div>
+                  <div class="cardConfiance-body">
+                      <p>
+                          Paragraphe. Cliquez ici pour <br/>  ajouter votre texte.<br/> Présetez-vous et votre entreprise
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+       <section class="section-services">
+           <h4>Nos Services</h4>
+           <div class="container-services">
+                 <div class="item-service1">
+                     <img src="{{ asset('images/homePage/propriete5.jpg') }}" alt="..." class="card-image"/>
+                 </div>
+                 <div class="item-service2">
+                     <div class="contenu">
+                         <h4>Phase de conception</h4>
+                         <p>
+                             <a href="#">Paragraphe. Cliquez ici pour modifier. Utilisez-le pour vous présenter à votre visite</a>
+                         </p>
+                     </div>
+                 </div>
+                 <div class="item-service3">
+                     <img src="{{ asset('images/homePage/propriete5.jpg') }}" alt="..." class="card-image"/>
+                 </div>
+                 <div class="item-service4">
+                     <div class="contenu">
+                         <h4>Phase de conception</h4>
+                         <p>
+                             <a href="#">Paragraphe. Cliquez ici pour modifier. Utilisez-le pour vous présenter à votre visite</a>
+                         </p>
+                     </div>
+                 </div>
+                 <div class="item-service5">
+                     <div class="contenu">
+                         <h4>Phase de conception</h4>
+                         <p>
+                             <a href="#">Paragraphe. Cliquez ici pour modifier. Utilisez-le pour vous présenter à votre visite</a>
+                         </p>
+                     </div>
+                 </div>
+                 <div class="item-service6">
+                     <img src="{{ asset('images/homePage/propriete5.jpg') }}" alt="..." class="card-image"/>
+                 </div>
+                 <div class="item-service7">
+                     <div class="contenu">
+                         <h4>Phase de conception</h4>
+                         <p>
+                             <a href="#">Paragraphe. Cliquez ici pour modifier. Utilisez-le pour vous présenter à votre visite</a>
+                         </p>
+                     </div>
+                 </div>
+                 <div class="item-service8">
+                     <img src="{{ asset('images/homePage/propriete5.jpg') }}" alt="..." class="card-image"/>
+                 </div>
+           </div>
+       </section>
+  {% endblock %}
+{% endblock %}

@@ -13,50 +13,38 @@
     <link rel="stylesheet" href="{{ asset('build/app_home_page.css') }}">
     <link rel="stylesheet" href="{{ asset('build/app_aboutus_page.css') }}">
     <link rel="stylesheet" href="{{ asset('build/app_biens_page.css') }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 {% endblock %}
 
 {% block body %}
     {% block main %}
-        <div class="tite-detailBien">
-             <h4>APPARTEMENT {{ id }} PIECES A LIKOUF</h4>
-             <p>
-                 <a>
 
-                 </a>
-             </p>
-        </div>
-
-        <section class="container-images">
-            <div class="images" >
-                <div class="yt-video">
-                    <iframe
-                            width="100%"
-                            src="https://www.youtube.com/embed/GUPP7dp3JQs?si=jmMYjo0YTYRM6Nih"
-                            frameborder="0"
-                            allowfullscreen
-                    >
-                    </iframe>
+        <section class="section-bg" style="background: url({{ asset('images/homePage/banner.png') }}) no-repeat">
+            <div class="overlay-bg">
+                <h2>NOS PROPRIETES EN EXCLUSIVITES</h2>
+            </div>
+        </section>
+        <section class="bar-property">
+            <div class="bar-container">
+                <div>
+                    <h5>Type de propriété</h5>
+                    <p>Toutes les proriétés</p>
                 </div>
-                <div class="image1">
-                    <img src="{{ asset("images/homePage/propriete1.jpg") }}" alt="..." />
+                <div>
+                    <h5>Emplacement du site</h5>
+                    <p>Toutes les sites</p>
                 </div>
-                <div class="image2">
-                    <img src="{{ asset("images/homePage/propriete2.jpg") }}" alt="..." />
-                </div>
-                <div class="image3">
-                    <img src="{{ asset("images/homePage/propriete3.jpg") }}" alt="..." />
-                </div>
-                <div class="image4">
-                    <img src="{{ asset("images/homePage/propriete4.jpg") }}" alt="..." />
-
+                <div>
+                    <h5>Disponibilité</h5>
+                    <p>Aucun</p>
                 </div>
             </div>
         </section>
         <section class="class-propriete">
-
             <div class="container-propriete">
+
+                {% for i in 0..7 %}
                     <div class="row">
+
                         <div class="card-propriete">
                             <div class="card-head">
                                 <img src="{{ asset('images/homePage/propriete1.jpg') }}" alt="image de la premiere propriete"/>
@@ -197,9 +185,12 @@
 
                             </div>
                         </div>
-                    </div>
-            </div>
 
+                    </div>
+                {% endfor %}
+
+            </div>
         </section>
+
     {% endblock %}
 {% endblock %}

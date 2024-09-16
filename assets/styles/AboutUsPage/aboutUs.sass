@@ -1,0 +1,87 @@
+@import "../color"
+@import "../font"
+
+body
+  main
+    min-width: 100vw
+    overflow-x: hidden
+
+    .section-bg
+      height: 22rem
+      margin-bottom: 2rem
+      .overlay-bg
+        background: rgba(0, 0, 0, 0.39)
+        height: 100%
+        font-weight: 900
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #ffffff
+    .section-presentation
+      width: 100vw
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      .container-presentation
+        height: 100%
+        width: 80%
+        display: grid
+        //grid-template-columns: repeat(auto-fill,minmax(450px,610px))
+        grid-template-columns: repeat(auto-fill,minmax(450px,1fr))
+        grid-gap: 3rem
+        grid-row-gap: 4rem
+        //grid-template-row: 400px
+        img
+          width: 100%
+          object-fit: cover
+        .presentation-right
+          padding-top: 2rem
+          h4
+            font-size: 30px
+            padding-bottom: 1rem
+          p
+            font-size: 18px
+  main
+    .section-services
+      width: 100vw
+      margin-bottom: 2rem
+      .contenu
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        padding: 2rem 5rem
+        text-align: center
+        h4
+          font-size: 16px
+        a
+          color: #000
+          text-align: center
+          padding-bottom: 2rem
+        p
+          font-size: 12px
+      h4
+        text-align: center
+        text-transform: uppercase
+        font-size: 20px
+        font-weight: 600
+        margin-bottom: 3rem
+
+      .container-services
+        width: 100%
+        background: #DBDBDB
+        display: grid
+        //grid-template-columns: repeat(auto-fill,minmax(350px,395px))
+        //grid-template-columns: repeat(auto-fill,minmax(350px,1fr))
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr))
+        //grid-template-row: minmax(300px,400px)
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+
+
+
+
+
