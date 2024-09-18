@@ -1,0 +1,1 @@
+import "../../styles/CarrierePage/carrierePage.sass"

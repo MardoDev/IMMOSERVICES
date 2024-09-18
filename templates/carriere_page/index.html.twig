@@ -1,20 +1,235 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello CarrierePageController!{% endblock %}
-
+{% block title %}Page carrière{% endblock %}
+{% block stylesheets %}
+    {# {{ parent() }}
+    {{ encore_entry_script_tags('app_home_page') }} #}
+    {# Importation de boostrap #}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    {# Importation de swipper #}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/app_home_page.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/app_aboutus_page.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/app_carriere_page.css') }}">
+{% endblock %}
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+  {% block main %}
+        <section class="section-carriere">
+            <h4>Offres disponibles</h4>
+            <div class="section-carriere-cards">
+                <div class="carriere-card">
+                    <div class="carriere-card-title"> <h5>offre de stage</h5> </div>
+                    <div class="carriere-card-image"><img class="logo" src="{{ asset('images/icons/logoIMMO.png') }}" alt=".."/> </div>
+                    <div class="carriere-card-contents">
+                        <div class="carriere-card-content-titre">
+                            <h6>Web Developper</h6>
+                            <div class="container-icons">
+                                <a href="#"><img class="images-black" src="{{ asset('images/icons/facebook.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/twitter.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/youtube.svg') }}" alt=".."/></a>
+                            </div>
+                        </div>
+                        <div class="carriere-card-content-para">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Optio aut sit minima delectus reiciendis labore. amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carriere-card-content-list">
+                            <ul style="list-style-image: url({{ asset('images/icons/valider.svg') }})" class="container-items">
+                                <li>Type de contrat</li>
+                                <li>Durée du contrat</li>
+                                <li>But must explain</li>
+                                <li>You know all</li>
+                            </ul>
+                        </div>
+                        <div class="carriere-card-content-btn">
+                            <a href="#" class="btn-postuler">Postulé</a>
+                        </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+                    </div>
+                </div>
+                <div class="carriere-card">
+                    <div class="carriere-card-title"> <h5>offre de stage</h5> </div>
+                    <div class="carriere-card-image"><img class="logo" src="{{ asset('images/icons/logoIMMO.png') }}" alt=".."/> </div>
+                    <div class="carriere-card-contents">
+                        <div class="carriere-card-content-titre">
+                            <h6>Web Developper</h6>
+                            <div class="container-icons">
+                                <a href="#"><img class="images-black" src="{{ asset('images/icons/facebook.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/twitter.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/youtube.svg') }}" alt=".."/></a>
+                            </div>
+                        </div>
+                        <div class="carriere-card-content-para">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Optio aut sit minima delectus reiciendis labore. amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carriere-card-content-list">
+                            <ul style="list-style-image: url({{ asset('images/icons/valider.svg') }})" class="container-items">
+                                <li>Type de contrat</li>
+                                <li>Durée du contrat</li>
+                                <li>But must explain</li>
+                                <li>You know all</li>
+                            </ul>
+                        </div>
+                        <div class="carriere-card-content-btn">
+                            <a href="#" class="btn-postuler">Postulé</a>
+                        </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/hp EliteBooK/Desktop/com.immoservice.webapp/src/Controller/CarrierePageController.php</code></li>
-        <li>Your template at <code>C:/Users/hp EliteBooK/Desktop/com.immoservice.webapp/templates/carriere_page/index.html.twig</code></li>
-    </ul>
-</div>
+                    </div>
+                </div>
+                <div class="carriere-card">
+                    <div class="carriere-card-title"> <h5>offre de stage</h5> </div>
+                    <div class="carriere-card-image"><img class="logo" src="{{ asset('images/icons/logoIMMO.png') }}" alt=".."/> </div>
+                    <div class="carriere-card-contents">
+                        <div class="carriere-card-content-titre">
+                            <h6>Web Developper</h6>
+                            <div class="container-icons">
+                                <a href="#"><img class="images-black" src="{{ asset('images/icons/facebook.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/twitter.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/youtube.svg') }}" alt=".."/></a>
+                            </div>
+                        </div>
+                        <div class="carriere-card-content-para">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Optio aut sit minima delectus reiciendis labore. amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carriere-card-content-list">
+                            <ul style="list-style-image: url({{ asset('images/icons/valider.svg') }})" class="container-items">
+                                <li>Type de contrat</li>
+                                <li>Durée du contrat</li>
+                                <li>But must explain</li>
+                                <li>You know all</li>
+                            </ul>
+                        </div>
+                        <div class="carriere-card-content-btn">
+                            <a href="#" class="btn-postuler">Postulé</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carriere-card">
+                    <div class="carriere-card-title"> <h5>offre de stage</h5> </div>
+                    <div class="carriere-card-image"><img class="logo" src="{{ asset('images/icons/logoIMMO.png') }}" alt=".."/> </div>
+                    <div class="carriere-card-contents">
+                        <div class="carriere-card-content-titre">
+                            <h6>Web Developper</h6>
+                            <div class="container-icons">
+                                <a href="#"><img class="images-black" src="{{ asset('images/icons/facebook.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/twitter.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/youtube.svg') }}" alt=".."/></a>
+                            </div>
+                        </div>
+                        <div class="carriere-card-content-para">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Optio aut sit minima delectus reiciendis labore. amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carriere-card-content-list">
+                            <ul style="list-style-image: url({{ asset('images/icons/valider.svg') }})" class="container-items">
+                                <li>Type de contrat</li>
+                                <li>Durée du contrat</li>
+                                <li>But must explain</li>
+                                <li>You know all</li>
+                            </ul>
+                        </div>
+                        <div class="carriere-card-content-btn">
+                            <a href="#" class="btn-postuler">Postulé</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carriere-card">
+                    <div class="carriere-card-title"> <h5>offre de stage</h5> </div>
+                    <div class="carriere-card-image"><img class="logo" src="{{ asset('images/icons/logoIMMO.png') }}" alt=".."/> </div>
+                    <div class="carriere-card-contents">
+                        <div class="carriere-card-content-titre">
+                            <h6>Web Developper</h6>
+                            <div class="container-icons">
+                                <a href="#"><img class="images-black" src="{{ asset('images/icons/facebook.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/twitter.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/youtube.svg') }}" alt=".."/></a>
+                            </div>
+                        </div>
+                        <div class="carriere-card-content-para">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Optio aut sit minima delectus reiciendis labore. amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carriere-card-content-list">
+                            <ul style="list-style-image: url({{ asset('images/icons/valider.svg') }})" class="container-items">
+                                <li>Type de contrat</li>
+                                <li>Durée du contrat</li>
+                                <li>But must explain</li>
+                                <li>You know all</li>
+                            </ul>
+                        </div>
+                        <div class="carriere-card-content-btn">
+                            <a href="#" class="btn-postuler">Postulé</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carriere-card">
+                    <div class="carriere-card-title"> <h5>offre de stage</h5> </div>
+                    <div class="carriere-card-image"><img class="logo" src="{{ asset('images/icons/logoIMMO.png') }}" alt=".."/> </div>
+                    <div class="carriere-card-contents">
+                        <div class="carriere-card-content-titre">
+                            <h6>Web Developper</h6>
+                            <div class="container-icons">
+                                <a href="#"><img class="images-black" src="{{ asset('images/icons/facebook.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/twitter.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/youtube.svg') }}" alt=".."/></a>
+                            </div>
+                        </div>
+                        <div class="carriere-card-content-para">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Optio aut sit minima delectus reiciendis labore. amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carriere-card-content-list">
+                            <ul style="list-style-image: url({{ asset('images/icons/valider.svg') }})" class="container-items">
+                                <li>Type de contrat</li>
+                                <li>Durée du contrat</li>
+                                <li>But must explain</li>
+                                <li>You know all</li>
+                            </ul>
+                        </div>
+                        <div class="carriere-card-content-btn">
+                            <a href="#" class="btn-postuler">Postulé</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carriere-card">
+                    <div class="carriere-card-title"> <h5>offre de stage</h5> </div>
+                    <div class="carriere-card-image"><img class="logo" src="{{ asset('images/icons/logoIMMO.png') }}" alt=".."/> </div>
+                    <div class="carriere-card-contents">
+                        <div class="carriere-card-content-titre">
+                            <h6>Web Developper</h6>
+                            <div class="container-icons">
+                                <a href="#"><img class="images-black" src="{{ asset('images/icons/facebook.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/twitter.svg') }}" alt=".."/></a>
+                                <a href="#"><img src="{{ asset('images/icons/youtube.svg') }}" alt=".."/></a>
+                            </div>
+                        </div>
+                        <div class="carriere-card-content-para">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Optio aut sit minima delectus reiciendis labore. amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="carriere-card-content-list">
+                            <ul style="list-style-image: url({{ asset('images/icons/valider.svg') }})" class="container-items">
+                                <li>Type de contrat</li>
+                                <li>Durée du contrat</li>
+                                <li>But must explain</li>
+                                <li>You know all</li>
+                            </ul>
+                        </div>
+                        <div class="carriere-card-content-btn">
+                            <a href="#" class="btn-postuler">Postulé</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+  {% endblock %}
 {% endblock %}

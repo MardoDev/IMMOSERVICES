@@ -8,11 +8,9 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class CarrierePageController extends AbstractController
 {
-    #[Route('/carriere/page', name: 'app_carriere_page')]
+    #[Route('/carriere', name: 'app_carriere_page')]
     public function index(): Response
     {
-        return $this->render('carriere_page/index.html.twig', [
-            'controller_name' => 'CarrierePageController',
-        ]);
+        return $this->render('carriere_page/index.html.twig');
     }
 }

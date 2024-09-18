@@ -19,12 +19,15 @@
 {% block body %}
     {% block main %}
         <div class="tite-detailBien">
-             <h4>APPARTEMENT {{ id }} PIECES A LIKOUF</h4>
-             <p>
-                 <a>
-
-                 </a>
-             </p>
+            <div class="content-detailBien">
+                <h4>APPARTEMENT {{ id }} PIECES A LIKOUF</h4>
+                <p>
+                    <span class="material-symbols-outlined">ios_share</span>
+                    <a href="#">
+                        Partager
+                    </a>
+                </p>
+            </div>
         </div>
 
         <section class="container-images">
@@ -53,8 +56,127 @@
                 </div>
             </div>
         </section>
-        <section class="class-propriete">
+        <section class="description-biens">
+            <dev class="des-container-left">
+                 <div class="des-left-1">
+                     <h5>APPARTEMENT {{ id }} PIECES A LIKOUF</h5>
+                     <div class="paragraphe-des-left-1">
+                         <h6>Description de la propriété</h6>
+                         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Commodi velit error ullam et, inventore consequatur nam
+                         voluptatem soluta, accusantium expedita facilis exercitationem.
+                         Cumque soluta quis minus iure consectetur odit voluptatem vitae temporibus,
+                         inventore ipsum quia facilis. Saepe ducimus asperiores aspernatur ut aliquam rerum culpa,
+                         iste ex, magnam velit fuga ipsum quisquam! Maxime explicabo omnis asperiores! Nisi soluta unde,
+                         molestias quasi quae ex repellendus incidunt minima, ab ipsam iusto consectetur cum impedit anim
+                     </div>
+                 </div>
+                 <div class="des-left-2">
+                     <h5>Ce que propose ce logement</h5>
+                     <div class="container-icons">
+                         <div class="row-containaire-icons">
+                             <div class="chambre">
+                                 <img src="{{ asset('images/icons/lit.png') }}" alt="Chambre">
+                                 <p>Chambres</p>
+                                 <p class="nombre">4</p>
+                             </div>
+                             <div class="chambre">
+                                 <img src="{{ asset('images/icons/baignoire.png') }}" alt="Chambre">
+                                 <p>SdB</p>
+                                 <p class="nombre">2</p>
+                             </div>
+                             <div class="chambre">
+                                 <img src="{{ asset('images/icons/etage.png') }}" alt="Chambre">
+                                 <p>Etages</p>
+                                 <p class="nombre">3</p>
+                             </div>
+                             <div class="chambre">
+                                 <img src="{{ asset('images/icons/surface.png') }}" alt="Chambre">
+                                 <p>m²</p>
+                                 <p class="nombre">1234</p>
+                             </div>
+                         </div>
+                         <div class="row-containaire-icons">
+                             <div class="chambre">
+                                 <img src="{{ asset('images/icons/lit.png') }}" alt="Chambre">
+                                 <p>Chambres</p>
+                                 <p class="nombre">4</p>
+                             </div>
+                             <div class="chambre">
+                                 <img src="{{ asset('images/icons/baignoire.png') }}" alt="Chambre">
+                                 <p>SdB</p>
+                                 <p class="nombre">2</p>
+                             </div>
+                             <div class="chambre">
+                                 <img src="{{ asset('images/icons/etage.png') }}" alt="Chambre">
+                                 <p>Etages</p>
+                                 <p class="nombre">3</p>
+                             </div>
+                             <div class="chambre">
+                                 <img src="{{ asset('images/icons/surface.png') }}" alt="Chambre">
+                                 <p>m²</p>
+                                 <p class="nombre">1234</p>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+            </dev>
+            <dev class="container-right">
+                <h5>35£ par nuit</h5>
+                <p class="container-right-red">Ce logement est occupé jusqu'au 12/04/2024</p>
+                <div class="tableau-biens">
+                    <div class="tab-item1">
+                        <h6>ARRIVEE</h6>
+                        <p>10/02/2024</p>
+                    </div>
+                    <div class="tab-item2">
+                        <h6>NBRE DE JOURS</h6>
+                        <p>2</p>
+                    </div>
+                    <div class="tab-item3">
+                        <div class="tab-item3-left">
+                            <h6>NOMBRE DE PERSONNES</h6>
+                            <p>2 voyageurs</p>
+                        </div>
+                        <div class="tab-item3-right">
+                           <a href="#"><img src="{{ asset('images/icons/add_circle.png') }}" alt="..." /></a>
+                        </div>
+                    </div>
+                    <div class="tab-item4">
+                        <h6>NOM & PRENOM</h6>
+                        <p>Jean Bruno</p>
+                    </div>
+                    <div class="tab-item5">
+                        <h6>PAYS/REGION</h6>
+                        <p>FRANCE (+33)</p>
+                    </div>
+                    <div class="tab-item6">
+                        <h6>TELEPHONE</h6>
+                        <p>00 00 00 00 00</p>
+                    </div>
+                </div>
+                <div class="btn-reserver"><a href="#">RESERVER</a></div>
+                <p>Aucun montant ne vous sera débité pour le moment</p>
+                <div class="container-right-details">
+                    <div class="details-information">
+                        <p><span>35€ x 2 nuits</span></p>
+                        <p><span>Frais de ménage</span></p>
+                    </div>
+                    <div class="details-sommes">
+                        <p>70 € </p>
+                        <p>12 €</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="total">
+                    <p class="total">Total</p>
+                    <p class="prix">96 €</p>
+                </div>
+            </dev>
+        </section>
 
+        <section class="class-propriete">
+            <h6>Voir d'autres propriétés</h6>
             <div class="container-propriete">
                     <div class="row">
                         <div class="card-propriete">

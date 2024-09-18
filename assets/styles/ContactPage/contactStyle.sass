@@ -1,0 +1,42 @@
+@import "../font"
+@import "../color"
+
+body
+  width: 100vw
+  overflow-x: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  main
+    #map
+      height: 220px
+      margin: 2rem 0 9rem 0
+    .section-contact
+      width: 100vw
+      margin-bottom: 2rem
+      .section-contact-container
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 7rem
+        flex-wrap: wrap
+        .section-contact-right
+          width: 25rem
+          .btn
+            transform: translateX(20rem)
+          h4
+            padding-bottom: 1.5rem
+          label
+            color: rgba(134, 133, 133, 0.89)
+
+
+        .section-contact-left
+          width: 50%
+          //transform: translateY(-28%)
+          .section-contact-left-title
+            margin-bottom: 1.8rem
+          p
+            color: rgba(134, 133, 133, 0.89)
+          .contact-entete-title
+            margin-bottom: 2rem

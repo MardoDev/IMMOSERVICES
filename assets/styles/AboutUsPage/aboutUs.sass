@@ -2,6 +2,7 @@
 @import "../font"
 
 body
+  width: 100vw
   main
     min-width: 100vw
     overflow-x: hidden
@@ -28,7 +29,8 @@ body
         width: 80%
         display: grid
         //grid-template-columns: repeat(auto-fill,minmax(450px,610px))
-        grid-template-columns: repeat(auto-fill,minmax(450px,1fr))
+        //grid-template-columns: repeat(auto-fill,minmax(450px,1fr))
+        grid-template-columns: repeat(auto-fill,minmax(430px,1fr))
         grid-gap: 3rem
         grid-row-gap: 4rem
         //grid-template-row: 400px
@@ -36,10 +38,10 @@ body
           width: 100%
           object-fit: cover
         .presentation-right
-          padding-top: 2rem
+          padding-top: 1rem
           h4
-            font-size: 30px
-            padding-bottom: 1rem
+            font-size: 28px
+            padding-bottom: 0.6rem
           p
             font-size: 18px
   main

@@ -25,6 +25,8 @@ Encore
     .addEntry('app_home_page', './assets/scripts/homePage/homeStyle.ts')
     .addEntry('app_aboutus_page', './assets/scripts/AboutUsPage/aboutUs.ts')
     .addEntry('app_biens_page', './assets/scripts/BiensPage/biensPages.ts')
+    .addEntry('app_contact_page', './assets/scripts/ContactPage/ContactPage.ts')
+    .addEntry('app_carriere_page', './assets/scripts/CarrierePage/carrierePage.ts')
 
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.

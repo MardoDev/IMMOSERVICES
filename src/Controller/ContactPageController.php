@@ -8,11 +8,9 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ContactPageController extends AbstractController
 {
-    #[Route('/contact/page', name: 'app_contact_page')]
+    #[Route('/contact', name: 'app_contact_page')]
     public function index(): Response
     {
-        return $this->render('contact_page/index.html.twig', [
-            'controller_name' => 'ContactPageController',
-        ]);
+        return $this->render('contact_page/index.html.twig');
     }
 }

@@ -13,7 +13,7 @@ body
       .bar-container
         border: 1.5px solid #D5D5D5
         width: 88%
-        height: 50px
+        min-height: 50px
         display: flex
         align-items: center
         justify-content: center
@@ -29,6 +29,7 @@ body
           padding-left: 2rem
           p
             color: #787373
+            margin-bottom: 0
         div:not(:last-child)
           border-right: 1px solid #D5D5D5
 
@@ -44,14 +45,12 @@ body
   width: 100vw
   main
     .container-images
-      //margin: 0 2rem
       width: 100%
-      //height: 20rem
-      //background: #0dcaf0
       display: flex
       align-items: center
       justify-content: center
       flex-direction: column
+      margin-bottom: 2rem
       .images
         width: 90%
         height: 100%
@@ -60,7 +59,6 @@ body
         display: grid
         grid-template-columns: repeat(auto-fill,minmax(230px,1fr))
         //grid-template-columns: auto auto auto auto
-
         grid-gap: 0.2rem
         .yt-video
           grid-row-start: 1
@@ -75,18 +73,160 @@ body
             width: 100%
         img
           width: 100%
+          //width: 90%
           height: 100%
           object-fit: cover
 
-        .image1
-          background: #0f5132
-        .image2
-          background: #f6d10f
-        .image3
-          background: #32f60f
-        .image4
-          background: #c40ff6
+body
+  main
+    .tite-detailBien
+      width: 100vw
+      .content-detailBien
+        padding: 1rem 3.9rem 2rem 3.9rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        p
+          margin-bottom: 0
+          display: flex
+          align-items: center
+          justify-content: center
+        h4
+          margin-bottom: 0
+          display: flex
+          align-items: center
+          justify-content: center
+          font-size: 20px
+          font-weight: 600
+    .description-biens
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      padding: 1rem 2.5rem 3rem 0
+      gap: 3rem
+      .des-container-left
+        width: 54%
+        h5
+          margin: 1.5rem 0 2rem 0
+          font-weight: 600
+        h6
+          font-weight: 600
+          padding-bottom: 0.8rem
+      .des-container-left
+        .container-icons
+          display: flex
+          flex-direction: column
+          gap: 2rem
+          .row-containaire-icons
+            display: flex
+            gap: 4.5rem
+            p
+              padding: 1rem 0
+              margin-bottom: 0
+      .container-right
+        margin-top: 5rem
+        border: 1px solid
+        border-radius: 2rem
+        padding: 1.5rem 2rem
+        h5
+          font-size: 20px
+          font-weight: 600
+        .container-right-red
+          color: red
+          font-size: 12px
+          margin-bottom: 0.6rem
+        .btn-reserver
+          width: 100%
+          height: 3rem
+          background: #0b5ed7
+          color: #ffffff
+          font-weight: 600
+          border-radius: 1rem
+          margin: 1rem 0
+          a
+            text-decoration: none
+            color: #ffffff
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 100%
+            height: 100%
+        .container-right-details
+          display: flex
+          gap: 10rem
+          .details-information
+            span
+              text-decoration: underline
+          .details-sommes
+            align-self: flex-end
+        .total
+          display: flex
+          gap: 15rem
+        .tableau-biens
+          border: 1px solid
+          border-radius: 2rem
+          display: grid
+          grid-template-columns: repeat(2,auto)
+          overflow: hidden
+          h6
+            font-size: 14px
+            font-weight: 600
+          p
+            margin-bottom: 0
+            padding-bottom: 0
+            font-size: 12px
+          .tab-item1
+            border: 1px solid
+            padding: 0.6rem
+            width: 100%
+            height: 100%
+          .tab-item2
+            border: 1px solid
+            padding: 0.6rem
+            width: 100%
+            height: 100%
+          .tab-item3
+            border: 1px solid
+            padding: 0.6rem
+            grid-column-start: 1
+            grid-column-end: 3
+            width: 100%
+            height: 100%
+            display: flex
+            gap: 0
+            .tab-item3-right
+              width: 30%
+              display: flex
+              align-items: center
+              justify-content: flex-end
+            img
+              width: 18px
+          .tab-item4
+            border: 1px solid
+            padding: 0.6rem
+            grid-column-start: 1
+            grid-column-end: 3
+            width: 100%
+            height: 100%
+          .tab-item5
+            border: 1px solid
+            padding: 0.6rem
+            width: 100%
+            height: 100%
+          .tab-item6
+            border: 1px solid
+            padding: 0.6rem
+            width: 100%
+            height: 100%
 
-
+body
+  main
+    .class-propriete
+      h6
+        text-align: center
+        font-weight: 600
+        font-size: 24px
+      .card-propriete
+        padding: 0
 
 
