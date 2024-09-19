@@ -82,7 +82,7 @@ body
         justify-content: center
         position: relative
         bottom: 0.2rem
-        .btn-postuler
+        .btn-postuler, .btn
           width: 60%
           background: $primary-color
           height: 2.6rem
@@ -93,5 +93,103 @@ body
           font-size: 19px
           font-weight: 600
           color: #ffffff
+
+//Carrière_page_details STYLE
+
+body
+  main
+    *
+      margin: 0
+      padding: 0
+      box-sizing: border-box
+    .section-carriere-presentation
+      width: 100vw
+      //height: 30rem
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 2.5rem
+      margin-bottom: 1.5rem
+      .carriere-presentation-left
+        width: 25%
+        img
+          width: 100%
+          height: 80%
+          object-fit: cover
+          border-radius: 2rem
+
+
+body
+  main
+    .section-carriere-presentation
+      .carriere-presentation-right
+        width: 50%
+        h4
+          margin-bottom: 1.6rem
+          font-size: 3.1rem
+          font-weight: 600
+        .container-icons
+          display: flex
+          gap: 1rem
+          flex-wrap: wrap
+          margin-bottom: 0.8rem
+          div
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 0.5rem
+        .presentation-right-paragraphe
+          margin-bottom: 1.5rem
+          color: rgba(0, 0, 0, 0.6)
+        .presentation-right-container-list
+          display: flex
+          column-gap: 7rem
+          row-gap: 2rem
+          flex-wrap: wrap
+          h6
+            margin-bottom: 1.5rem
+            transform: translateX(-1.3rem)
+            font-weight: 500
+          li
+            font-size: 14px
+            color: rgba(0, 0, 0, 0.6)
+        .presentation-right-container-list1
+          margin-left: 1rem
+
+body
+  main
+    .formulaire
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      background: #EFEFEF
+      padding : 1.5rem 0
+      margin: 3rem 0
+      form
+        width: 80%
+      .container-form
+        display: grid
+        grid-template-columns: auto auto
+        column-gap: 3rem
+        span
+          color: red
+      #message
+        height: 60%
+        width: 70%
+      .btn
+        width: 20%
+        background: $primary-color
+        height: 2.6rem
+        border-radius: 2rem
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 19px
+        font-weight: 600
+        color: #ffffff
+
+
+
 
 

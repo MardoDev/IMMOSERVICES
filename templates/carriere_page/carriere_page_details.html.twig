@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('build/app.css') }}">
     <link rel="stylesheet" href="{{ asset('build/app_home_page.css') }}">
     <link rel="stylesheet" href="{{ asset('build/app_aboutus_page.css') }}">
-    <link rel="stylesheet" href="{{ asset('build/app_biens_page.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/app_carriere_page.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 {% endblock %}
 
@@ -23,6 +23,82 @@
                 <h2>NOUS CONTACTER</h2>
             </div>
         </section>
-        <h1>Carrière numéro {{ id }}</h1>
+        <section class="section-carriere-presentation">
+            <div class="carriere-presentation-left">
+                <img src="{{ asset('images/homePage/Team.webp') }}">
+            </div>
+            <div class="carriere-presentation-right">
+                <h4>Web Developper</h4>
+                <div class="container-icons">
+                    <div>
+                        <img src="{{ asset('images/icons/localisation.svg') }}">
+                        <p>London UK </p>
+                    </div>
+                    <div>
+                        <img src="{{ asset('images/icons/mail.svg') }}">
+                        <p>stagiaire.ndolo.f2e@groupsolutioncg.com</p>
+                    </div>
+                    <div>
+                        <img src="{{ asset('images/icons/instagram2.svg') }}">
+                        <p>London UK </p>
+                    </div>
+                </div>
+                <div class="presentation-right-paragraphe">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Dolores maiores excepturi animi, facilis reprehenderit delectus
+                        cumque alias molestias minima impedit. Id eum tempore officia
+                        voluptatibus quo quis atque facere cum voluptas aliquid ipsum
+                        quam deleniti pariatur ipsam, eius, eveniet rerum.
+                    </p>
+                </div>
+                <div class="presentation-right-container-list">
+                    <div class="presentation-right-container-list1 list">
+                        <h6>Duties & Responsibilities : </h6>
+                        <ul style="list-style-image: url({{ asset('images/icons/ok.svg') }})" class="container-items">
+                            <li>Type de contrat</li>
+                            <li>Durée du contrat</li>
+                            <li>But must explain</li>
+                        </ul>
+                    </div>
+                    <div class="presentation-right-container-list2 list">
+                        <h6>Minimum Qualifications : </h6>
+                        <ul style="list-style-image: url({{ asset('images/icons/ok.svg') }})" class="container-items">
+                            <li>Type de contrat</li>
+                            <li>Durée du contrat</li>
+                            <li>But must explain</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="formulaire">
+                <form>
+                    <div class="container-form f1">
+                        <div class="mb-3">
+                            <label for="prenom" class="form-label">Prénom <span>*</span></label>
+                            <input class="form-control" type="text" id="prenom" placeholder="Prénom ..." aria-label="entre le prenom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="nom" class="form-label">Nom  <span>*</span></label>
+                            <input class="form-control" type="text" id="nom" placeholder="Nom ..." aria-label="entre le nom de famille">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email <span>*</span> </label>
+                            <input type="email" class="form-control" id="email" placeholder="Votre Email ..." aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="objet" class="form-label">Téléphone </label>
+                            <input class="form-control" type="text" id="objet" placeholder="Objet ..." aria-label="objet">
+                        </div>
+                   </div>
+                   <div class="container-form2 f2">
+                       <div class="mb-3">
+                           <label for="message" class="form-label">Message</label>
+                           <textarea class="form-control" id="message" rows="3"></textarea>
+                       </div>
+                   </div>
+                <button type="submit" class="btn btn-primary">Envoyez</button>
+            </form>
+        </section>
     {% endblock %}
 {% endblock %}
